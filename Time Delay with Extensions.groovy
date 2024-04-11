@@ -6,7 +6,7 @@ import com.boomi.execution.ExecutionUtil;
 // Get Dynamic Process Property
 delayTimer = ExecutionUtil.getDynamicProcessProperty("DPP_Delay_Timer");
 
-// Convert String to Integer to do the Mathematics. Here the output time delay in in seconds.
+// Convert String to Integer to perform mathematical operation. Here the output time delay is in seconds.
 int waitFor = Integer.parseInt(delayTimer);
 Thread.sleep(waitFor * 1000);
 
